@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TicTacToe2</string>
+    <string name="no_data_received">No data received</string>
+    <string name="let_the_game_begin">Let the game Begin</string>
+    <string name="replay">restart the fragment</string>
+    <string name="exit_the_fragment">exits the fragment</string>
+    <string name="change_mark">Players, change shape! X is now O and vice versa</string>
+</resources>

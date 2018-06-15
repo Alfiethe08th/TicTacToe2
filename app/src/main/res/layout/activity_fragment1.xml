@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                    android:id="@+id/LinLay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                        <ImageView
+                            android:id="@+id/greenback"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/ic_ninja"
+                            android:padding="15dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/green_square"
+                            android:layout_marginTop="15dp"/>
+
+                        <TextView
+                            android:id="@+id/tab1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text="\t\tWelcome\nTo Tic-Tac-Toe" />
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chose_mark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="150dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/player"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Player A" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="25dp">
+
+                                    <ImageView
+                                        android:id="@+id/cross"
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:background="@drawable/ic_cross"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="10dp"
+                                        android:textSize="16sp"
+                                        android:textStyle="italic"
+                                        android:textColor="@android:color/black"
+                                        android:text="Or"/>
+
+                                    <ImageView
+                                        android:id="@+id/circle"
+                                        android:layout_width="26dp"
+                                        android:layout_height="26dp"
+                                        android:layout_marginLeft="10dp"
+                                        android:background="@drawable/ic_circle"/>
+                            </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="25dp"
+                        android:text="Chose Your Options"
+                        android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/show_mark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="150dp"
+                android:gravity="center_horizontal"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/playerA"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Player A" />
+
+                            <ImageView
+                                android:id="@+id/playerA_choice"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:padding="12dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/playerB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Player B" />
+
+                            <ImageView
+                                android:id="@+id/playerB_choice"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:padding="12dp" />
+
+                    </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+</ScrollView>
+
